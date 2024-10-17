@@ -2,6 +2,7 @@ Customer Support Email Generator
 This Flask web application allows users to generate automated email components based on product descriptions. It integrates with OpenAI's GPT-3.5-turbo model to create comments, summaries, subject lines, and perform sentiment analysis based on user-provided product descriptions. This can be useful for automating customer support or marketing responses.
 
 **Features**
+
 Generate Comments: Create a 100-word comment based on a product description.
 Generate Subject Lines: Create an email subject line from the generated comment.
 Summarize Comments: Provide a brief summary (1-2 sentences) of the comment.
@@ -16,7 +17,8 @@ Flask installed (pip install flask)
 requests library installed (pip install requests)
 
 **Setup**
-1. Clone the repository:
+
+1. **Clone the repository**:
 git clone https://github.com/your-username/customerSupportChatbot.git
 cd customerSupportChatbot
 
@@ -24,12 +26,15 @@ cd customerSupportChatbot
 pip install -r requirements.txt
 
 3. **Set your OpenAI API Key:**
-Replace the OPENAI_API_KEY in app.py with your actual OpenAI API key.
+   Replace the OPENAI_API_KEY in app.py with your actual OpenAI API key.
 OPENAI_API_KEY = 'sk-your-api-key-here'
 
-5. **Run the Flask application:**
+4. **Run the Flask application:**
+python app.py
+
 
 **Usage**
+
 Open the application and navigate to the home page.
 Enter the product description and select the preferred language.
 Click on "Generate Comment" to receive a 100-word comment.
@@ -38,7 +43,9 @@ Submit the form on the /process route.
 The app will return the generated outputs in JSON format.
 
 **Example API Requests**
+
 **Generate Comment**
+
 Endpoint: /generate-comment
 Method: POST
 Parameters:
@@ -58,9 +65,12 @@ Parameters:
 }
 
 **Dependencies**
+
 Add these dependencies to your requirements.txt:
 Flask==2.2.5
 requests==2.31.0
+
+**Presentation** - https://docs.google.com/presentation/d/1A5Ep-HHccy36FdlMrECSSVKwDXrWxEO-ZXdmk0yhIoM/edit?usp=sharing
 
 
 
